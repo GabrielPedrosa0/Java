@@ -1,0 +1,8 @@
+Crie um banco
+> classe banco
+   > atributo : n conta, tipo da conta, nome do dono, saudo da conta, status da conta
+    > Metodos: abrirConta, fecharConta, depositar, sacar
+    > opicional: metodos: detalhes ou apresentar
+
+> tipo da conta, saudo da conta , dono da conta; são dados privados; metodos get e set
+
