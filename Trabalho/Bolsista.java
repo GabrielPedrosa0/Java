@@ -1,6 +1,6 @@
 package Trabalho;
 public class Bolsista extends Aluno {
-    
+
     Bolsista(String nome, String cpf, int idade, String matricula){
         super(nome, cpf, idade, matricula);
     }

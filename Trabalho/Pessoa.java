@@ -10,6 +10,8 @@ public abstract class Pessoa {
         this.idade = idade;
     }
 
+    // fazer os metodos GET e SET
+
     public void fezAniversario(){
         idade++;
         System.out.println(nome + " fez aniversario e esta com " + idade);

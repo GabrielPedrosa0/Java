@@ -3,31 +3,66 @@ package Trabalho;
 public class Main {
     public static void main(String[] args) {
 
-        Aluno a1 = new Aluno("Cíntia", "12345678901", 25, "ADS2025");
-        Aluno a2 = new Aluno("Samira", "97643501264", 20, "ASD205");
-
-        Bolsista ab1 = new Bolsista("Jefferson", "97502348531", 30, "SDA225");
-        Regular ar1 = new Regular("Gabriel","00135894672", 19, "ADS252");
-
-
-        Professor p1 = new Professor("Andrer", "98765432101", 55, "Tecnologia");
+        Disciplina d1 = new Disciplina("P358", "POO", 1);
+        Disciplina d2 = new Disciplina("R255", "RLA", 1);
+        Disciplina d3 = new Disciplina("S305", "SO", 2);
 
         
+        Aluno aluno1 = new Regular("Luiz", "98765432101", 20, "A2124");
+        Aluno aluno2 = new Regular("Cíntia", "68100587125", 24, "A1422");
+        Aluno aluno3 = new Bolsista("Gabriel", "01234567890", 21, "A3243");
 
-        a1.apresentar();
-        a1.pagarMensalidade();
+        Professor p1 = new Professor("Andre", "9846510078453", 45, "Tecnologia");
 
-        System.out.println(a2.nome);
+        Visitante v1 = new Visitante("Lucas", "8940354876", 32);
+        Visitante v2 = new Visitante("Lucas", "0002157489", 55);
+       
+        Turma t1 = new Turma();
+        t1.professor = p1;
+        t1.disciplina = d1;
+        t1.adicionarAluno(aluno1);
+        t1.adicionarAluno(aluno2);
+        t1.adicionarAluno(aluno3);
 
-        p1.apresentar();
-        p1.darAula();
+        Turma t2 = new Turma();
+        t2.professor = p1;
+        t2.disciplina = d2;
+        t2.adicionarAluno(aluno1);
+        t2.adicionarAluno(aluno2);
+        t2.adicionarAluno(aluno3);
 
+        Turma t3 = new Turma();
+        t3.professor = p1;
+        t3.disciplina = d3;
+        t3.adicionarAluno(aluno1);
+        t3.adicionarAluno(aluno2);
+        t3.adicionarAluno(aluno3);
+
+        System.out.println("--------------------------");
+        System.out.println("Turma 1");
+        System.out.println("Codigo: " + d1.codigo);
+        System.out.println(p1);
+        System.out.println(d1);
+        System.out.println("Alunos:");
+        t1.listarAluno();
+
+        System.out.println("--------------------------");
+        System.out.println("Turma 2");
+        System.out.println("Codigo: " + d2.codigo);
+        System.out.println(p1);
+        System.out.println(d2);
+        System.out.println("Alunos:");
+        t2.listarAluno();
+
+        System.out.println("--------------------------");
+        System.out.println("Turma 3");
+        System.out.println("Codigo: " + d3.codigo);
+        System.out.println(p1);
+        System.out.println(d3);
+        System.out.println("Alunos:");
+        t3.listarAluno();
         
-        a2.pagarMensalidade();
 
-        ab1.pagarMensalidade();
-        ar1.pagarMensalidade();
-        
     }
 }
 

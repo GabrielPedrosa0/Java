@@ -4,8 +4,9 @@ public abstract class Banco {
     private String tipoDaConta;
     private String nomeDoDono;
     private int saldoDaConta;
+    private String numeroDaConta;
     String statusDaConta;
-    String numeroDaConta;
+    
 
     public Banco(String tipoDaConta, String nomeDoDono, int saudoDaConta, String statusDaConta, String numeroDaConta){
         this.tipoDaConta = tipoDaConta;
@@ -27,8 +28,8 @@ public abstract class Banco {
         return nomeDoDono;
     }
 
-    public void setNomeDoDono(String nomeDoDOno){
-        this.nomeDoDono = nomeDoDOno;
+    public void setNomeDoDono(String nomeDoDono){
+        this.nomeDoDono = nomeDoDono;
     }
 
     public int getSaldoDaConta(){
@@ -56,7 +57,8 @@ public abstract class Banco {
         }
 
         if (valor > saldoDaConta) {
-            System.out.println("Saldo insuficiente!");
+            System.out.println(getNomeDoDono() + ", seu saldo é insuficiente!");
+            return;
         }
 
 
@@ -66,7 +68,7 @@ public abstract class Banco {
 
     public void apresentar(){
         System.out.println();
-        System.out.println( "Nº da Conta: "+ numeroDaConta + " | " + "Nome: " + getNomeDoDono() + " | Tipo da Conta: " + getTipoDaConta() + " | Saldo atual: " + saldoDaConta + " | Status: " + statusDaConta);
+        System.out.println( "Nº da Conta: " + numeroDaConta + " | " + "Nome: " + getNomeDoDono() + " | Tipo da Conta: " + getTipoDaConta() + " | Saldo atual: " + saldoDaConta + " | Status: " + statusDaConta);
         System.out.println();
     }
 }
