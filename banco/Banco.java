@@ -1,4 +1,4 @@
-package Banco;
+package banco;
 
 public abstract class Banco {
     private String tipoDaConta;

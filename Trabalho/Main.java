@@ -15,7 +15,7 @@ public class Main {
         Professor p1 = new Professor("Andre", "9846510078453", 45, "Tecnologia");
 
         Visitante v1 = new Visitante("Lucas", "8940354876", 32);
-        Visitante v2 = new Visitante("Lucas", "0002157489", 55);
+        Visitante v2 = new Visitante("Pedro", "0002157489", 55);
        
         Turma t1 = new Turma();
         t1.professor = p1;
