@@ -1,5 +1,5 @@
 ## Sistema de Autenticação Textual Baseado em Árvore AVL e Hash Criptográfico
-1. Introdução
+#1. Introdução
 
 Este trabalho apresenta o desenvolvimento de um sistema de autenticação textual fundamentado na integração de estruturas de dados clássicas — Lista Encadeada e Árvore AVL — com técnicas de hashing criptográfico. O objetivo principal é gerar uma assinatura digital determinística para cada linha de um arquivo de texto, garantindo integridade estrutural e sensibilidade a alterações no conteúdo.
 
@@ -15,7 +15,7 @@ Processamento de Arquivos
 
 Estrutura de Pilha (LIFO)
 
-2. Objetivo
+#2. Objetivo
 
 Desenvolver um mecanismo capaz de:
 
@@ -33,7 +33,7 @@ Exibir o hash resultante para cada linha.
 
 O sistema deve garantir que qualquer modificação no conteúdo textual produza um hash diferente.
 
-3. Fundamentação Teórica
+#3. Fundamentação Teórica
 3.1 Lista Encadeada Simples
 
 Estrutura linear dinâmica composta por nós interligados por ponteiros. Permite crescimento dinâmico e inserção sequencial.
@@ -83,7 +83,7 @@ o
 
 Essa estrutura é conceitualmente equivalente a uma árvore de Merkle.
 
-4. Metodologia
+#4. Metodologia
 
 Para cada linha do arquivo:
 
@@ -99,7 +99,7 @@ Armazenamento da árvore em pilha.
 
 Impressão dos hashes (ordem LIFO).
 
-5. Complexidade Computacional
+#5. Complexidade Computacional
 
 Se W representa o número de palavras por linha:
 
@@ -120,7 +120,7 @@ Após refatoração (com melhoria na lista):
 
 O(Wlog⁡W)
 O(WlogW)
-6. Resultados e Análise
+#6. Resultados e Análise
 
 O sistema apresenta:
 
@@ -144,7 +144,7 @@ Ausência de normalização textual
 
 Inserção ineficiente na lista
 
-7. Conclusão
+#7. Conclusão
 
 O projeto demonstra aplicação prática de estruturas de dados avançadas associadas a técnicas criptográficas, produzindo um sistema eficiente para autenticação estrutural de texto.
 
